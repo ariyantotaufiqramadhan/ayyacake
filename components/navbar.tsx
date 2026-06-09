@@ -48,7 +48,7 @@ export function Navbar() {
             {/* Logo */}
             <Link href="/" className="block flex-shrink-0">
               <Image
-                src="/images/logo-ayya.png"
+                src="/images/logo-ayya.webp"
                 alt="AYYA Cake"
                 width={120}
                 height={60}
@@ -97,7 +97,7 @@ export function Navbar() {
         <div className="flex items-center justify-between px-4 py-4 sm:px-6">
           <Link href="/" onClick={() => setIsOpen(false)}>
             <Image
-              src="/images/logo-ayya.png"
+              src="/images/logo-ayya.webp"
               alt="AYYA Cake"
               width={120}
               height={60}
