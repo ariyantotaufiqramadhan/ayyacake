@@ -5,15 +5,15 @@ import Image from 'next/image'
 
 const carouselImages = [
   {
-    src: '/images/carousel-bento.png',
+    src: '/images/carousel-bento.webp',
     alt: 'Bento Cake estetik custom & mini dari AYYA Cake',
   },
   {
-    src: '/images/carousel-birthday.png',
+    src: '/images/carousel-birthday.webp',
     alt: 'Birthday Cake mewah & anggun dari AYYA Cake',
   },
   {
-    src: '/images/carousel-dessert.png',
+    src: '/images/carousel-dessert.webp',
     alt: 'Slice Cake & Dessert lainnya dari AYYA Cake',
   },
 ]
