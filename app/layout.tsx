@@ -1,4 +1,5 @@
 import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata } from 'next'
 import { Fredoka, Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
@@ -61,6 +62,7 @@ export default function RootLayout({
       <body className="font-body antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
+        <SpeedInsights />
       </body>
     </html>
   )
