@@ -21,7 +21,7 @@ export function Hero() {
             {/* CTA Buttons — above carousel on mobile */}
             <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-center sm:gap-4 lg:justify-start">
               <Link
-                href="https://wa.me/62895412169070"
+                href="https://wa.me/6289686504962"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex w-full items-center justify-center rounded-full bg-raspberry px-8 py-3 font-body text-sm font-semibold text-white transition-all hover:bg-dark-raspberry sm:w-auto sm:text-base"
