@@ -1,7 +1,7 @@
 import { Analytics } from '@vercel/analytics/next'
-import { GoogleAnalytics } from '@next/third-parties/google' // <-- Tambahan Baru
 import type { Metadata } from 'next'
 import { Fredoka, Plus_Jakarta_Sans } from 'next/font/google'
+import Script from 'next/script' // <-- Menggunakan script bawaan Next.js (Gratis & Tanpa Install)
 import './globals.css'
 
 const fredoka = Fredoka({
@@ -48,7 +48,22 @@ export default function RootLayout({
       <body className="font-body antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
-        <GoogleAnalytics gaId="G-YM79H9EGDH" /> {/* <-- Tambahan Baru */}
+
+        {/* --- KODE GOOGLE ANALYTICS BAWAAN --- */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-YM79H9EGDH"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-YM79H9EGDH');
+          `}
+        </Script>
+        {/* ------------------------------------ */}
       </body>
     </html>
   )
